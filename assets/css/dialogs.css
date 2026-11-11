@@ -1,0 +1,121 @@
+dialog{
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--subtle);
+  border-radius:15px;
+  padding:0;
+  width:min(460px,calc(100% - 24px));
+  max-height:calc(100dvh - 30px);
+  box-shadow:0 20px 80px #112b2940
+}
+dialog::backdrop{
+  background:#162f2a66
+}
+.drawer{
+  margin:auto 12px auto auto
+}
+.dialog-inner{
+  padding:20px
+}
+.dialog-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px
+}
+.dialog-top h2{
+  font-size:21px;
+  line-height:1.2;
+  letter-spacing:-.035em
+}
+.dialog-top p{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px
+}
+.dialog-inner h3{
+  font-size:13px;
+  margin:15px 0 7px
+}
+.dialog-inner .socket{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  padding:9px 10px;
+  background:var(--bg);
+  border:1px solid var(--subtle);
+  border-radius:9px;
+  margin-top:6px
+}
+.socket strong{
+  display:block;
+  font-size:12px
+}
+.socket small{
+  display:block;
+  color:var(--muted);
+  font-size:11px
+}
+.socket .primary,.socket .sample{
+  min-height:44px;
+  font-size:11px
+}
+.socket .reserved-text{
+  color:var(--green);
+  font-size:11px;
+  font-weight:750
+}
+.report{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px
+}
+.dialog-inner .chip{
+  min-height:44px
+}
+.dialog-note{
+  color:var(--muted);
+  font-size:11px;
+  margin-top:9px
+}
+.toast{
+  position:fixed;
+  z-index:10;
+  right:16px;
+  bottom:15px;
+  max-width:min(420px,calc(100% - 32px));
+  background:#173b31;
+  color:#fff;
+  padding:11px 14px;
+  border-radius:10px;
+  box-shadow:0 8px 30px #112b2940;
+  font-weight:650;
+  font-size:13px
+}
+.toast:empty{
+  display:none
+}
+.preferences{
+  display:grid;
+  gap:7px
+}
+.pref{
+  min-height:46px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:7px 9px;
+  background:var(--bg);
+  border:1px solid var(--subtle);
+  border-radius:9px;
+  font-weight:650;
+  cursor:pointer
+}
+.pref input{
+  width:19px;
+  height:19px;
+  accent-color:var(--primary)
+}
+

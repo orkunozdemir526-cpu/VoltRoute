@@ -1,0 +1,79 @@
+.aux-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px
+}
+.aux-card{
+  padding:20px
+}
+.aux-card h2{
+  font-size:20px;
+  letter-spacing:-.04em;
+  margin-bottom:8px
+}
+.aux-card h3{
+  font-size:14px;
+  margin:14px 0 5px
+}
+.aux-card p,.aux-card li{
+  color:var(--muted)
+}
+.aux-card ul,.aux-card ol{
+  padding-left:21px;
+  margin:9px 0 0
+}
+.aux-card li+li{
+  margin-top:6px
+}
+.aux-card .sample{
+  margin-top:13px
+}
+.swatches{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:12px
+}
+.swatches span{
+  padding:9px 12px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:750;
+  border:1px solid var(--subtle)
+}
+.wire{
+  border:1px dashed var(--muted);
+  border-radius:9px;
+  padding:12px;
+  margin-top:13px;
+  display:grid;
+  gap:8px
+}
+.wire div{
+  border:1px dashed var(--muted);
+  border-radius:5px;
+  padding:7px;
+  color:var(--muted);
+  font-size:12px
+}
+.comparison{
+  display:grid;
+  gap:13px;
+  margin:16px 0
+}
+.comparison div{
+  display:grid;
+  gap:4px;
+  color:var(--muted);
+  font-weight:650;
+  font-size:12px
+}
+.comparison i{
+  height:12px;
+  background:var(--primary);
+  border-radius:20px
+}
+.comparison .old{
+  background:var(--muted)
+}
+

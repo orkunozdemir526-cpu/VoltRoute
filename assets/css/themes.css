@@ -1,0 +1,68 @@
+body.contrast{
+  --ok:#1e4cb1;
+  --busy:#613a88;
+  --fault:#9a185d;
+  --route:#204eae
+}
+body.dark{
+  color-scheme:dark;
+  --bg:#14221f;
+  --surface:#1c2e28;
+  --ink:#eef7f1;
+  --muted:#b6c9bf;
+  --subtle:#385149;
+  --soft:#263e35;
+  --green:#9ee9c3;
+  --primary:#19674d;
+  --mint:#314f41;
+  --map:#293e36;
+  --water:#243e4a;
+  --park:#344e3f;
+  --road:#526b5c;
+  --route:#57d1a2;
+  --maptext:#c2d7cb;
+  --ok:#247d5d;
+  --busy:#b27b37;
+  --fault:#ae4a60
+}
+.dark .map-svg .water-label{
+  fill:#a2c4d2
+}
+.dark .map-svg .road-label{
+  fill:#c0cdbd
+}
+.dark .ok{
+  color:#a0e8c7
+}
+.dark .busy{
+  color:#ffd195
+}
+.dark .fault,.dark .form-error{
+  color:#ffb3c2
+}
+.dark.contrast{
+  --ok:#1e4cb1;
+  --busy:#613a88;
+  --fault:#9a185d;
+  --route:#83a8ff
+}
+.dark.contrast .ok{
+  color:#9ebdff
+}
+.dark.contrast .busy{
+  color:#dbb8ff
+}
+.dark.contrast .fault{
+  color:#ffa4db
+}
+
+/* Native dropdown options must use the active theme instead of the OS default. */
+.select-field select option,
+.select-field select optgroup {
+  color: var(--ink);
+  background-color: var(--surface);
+}
+
+body.dark .select-field select {
+  color-scheme: dark;
+}

@@ -1,0 +1,81 @@
+
+:root{
+  color-scheme:light;
+  --bg:#f4f7f5;
+  --surface:#fff;
+  --ink:#142b27;
+  --muted:#526761;
+  --subtle:#e1e9e4;
+  --soft:#edf5f0;
+  --green:#17684e;
+  --primary:#12664b;
+  --mint:#d7f6e6;
+  --lime:#d8f58e;
+  --map:#edf1e8;
+  --water:#cce5e9;
+  --park:#dce8d5;
+  --road:#fbfcf8;
+  --route:#177758;
+  --maptext:#53665e;
+  --ok:#16654b;
+  --busy:#87540e;
+  --fault:#a23143;
+  --shadow:0 8px 24px #142b2709;
+  --font:'Inter','Segoe UI',system-ui,sans-serif
+}
+
+*{
+  box-sizing:border-box
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:14px/1.5 var(--font)
+}
+button,input,select{
+  font:inherit
+}
+button{
+  cursor:pointer;
+  color:inherit
+}
+a{
+  color:inherit
+}
+button:disabled{
+  cursor:default;
+  opacity:.56
+}
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #2776eb;
+  outline-offset:3px
+}
+button,select{
+  -webkit-tap-highlight-color:transparent
+}
+h1,h2,h3,p{
+  margin:0
+}
+[hidden]{
+  display:none!important
+}
+.icon{
+  width:19px;
+  height:19px;
+  flex:none;
+  vertical-align:middle
+}
+.skip{
+  position:fixed;
+  left:16px;
+  top:-70px;
+  z-index:20;
+  background:var(--surface);
+  padding:12px;
+  border-radius:8px
+}
+.skip:focus{
+  top:12px
+}
+

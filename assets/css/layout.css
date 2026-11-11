@@ -1,0 +1,159 @@
+.top{
+  background:var(--surface);
+  border-bottom:1px solid var(--subtle)
+}
+.top-in{
+  max-width:1560px;
+  margin:auto;
+  padding:0 36px;
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:none;
+  border:0;
+  padding:0;
+  font-weight:800;
+  font-size:23px;
+  letter-spacing:-1px;
+  white-space:nowrap
+}
+.brand-mark{
+  display:grid;
+  place-items:center;
+  width:37px;
+  height:37px;
+  background:#173b31;
+  color:#d9fa97;
+  border-radius:11px
+}
+.brand-mark .icon{
+  width:22px;
+  height:22px
+}
+.brand span:last-child b{
+  color:var(--green)
+}
+.tabs,.top-tools{
+  display:flex;
+  align-items:center;
+  gap:6px
+}
+.tab,.icon-btn{
+  border:0;
+  background:transparent;
+  border-radius:9px;
+  min-height:44px;
+  padding:0 13px;
+  font-weight:650;
+  color:var(--muted);
+  white-space:nowrap;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px
+}
+.tab .icon{
+  width:17px;
+  height:17px
+}
+.tab[aria-current=page]{
+  background:var(--soft);
+  color:var(--green)
+}
+.tab:hover,.icon-btn:hover{
+  background:var(--soft);
+  color:var(--ink)
+}
+.icon-btn{
+  width:44px;
+  padding:0
+}
+.demo{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--green);
+  background:var(--soft);
+  border:1px solid var(--subtle);
+  font-weight:700;
+  padding:6px 11px;
+  border-radius:999px;
+  white-space:nowrap;
+  font-size:12px
+}
+.demo:before{
+  content:'';
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#2e936f
+}
+.main{
+  max-width:1560px;
+  margin:auto;
+  padding:30px 36px 22px
+}
+.intro{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+  margin-bottom:23px
+}
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--green);
+  font-size:10.5px;
+  letter-spacing:.16em;
+  font-weight:800;
+  text-transform:uppercase;
+  margin-bottom:5px
+}
+.eyebrow .icon{
+  width:15px;
+  height:15px
+}
+.intro h1{
+  font-size:clamp(30px,3.1vw,46px);
+  font-weight:760;
+  letter-spacing:-.055em;
+  line-height:1.11
+}
+.intro p{
+  color:var(--muted);
+  margin-top:8px;
+  font-size:14px
+}
+.sample{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:44px;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--subtle);
+  border-radius:10px;
+  padding:0 13px;
+  font-weight:700;
+  white-space:nowrap
+}
+.sample:hover{
+  background:var(--soft);
+  border-color:#a6c8b8
+}
+.sample .icon{
+  color:var(--green);
+  width:17px;
+  height:17px
+}
+
